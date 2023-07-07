@@ -8,16 +8,34 @@ nav{
 .breadcrumb{
     background-color: #515161;
     border-radius: 0;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
 }
 
 a, a:hover{
-    color: #AEBD38
+    text-decoration: none;
+    color: #AEBD38;
+
+}
+
+.container {
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
 /** table*/
 table{
-    color: #68829E;
+    color: #68829E!important;
     margin: 100px 10px;
+    padding: 0.7rem;
+    border-collapse: collapse;
+}
+
+.table td, .table th {
+    padding: 1rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
 }
 
 thead{
@@ -26,7 +44,7 @@ thead{
     cursor: pointer;
 }
 
-ion-icon {
+tbody ion-icon {
     font-size: 16px;
     color:#68829E;
 }
@@ -43,11 +61,13 @@ thead, tbody tr {
     width: 100%;
 }
 
-footer {
+.footer {
     position: absolute;
     bottom:0;
     width: 100%;
     height: 60px;
     line-height: 60px;
-    background-color: #68829E;
+    background-color: #515161;
 }
+.text-muted {
+    color: rgb(185 194 203 / 75%)!important;}
